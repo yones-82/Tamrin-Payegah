@@ -1,0 +1,12 @@
+// ساخت جدول کاربر
+CREATE TABLE Users (
+    UserID int NOT NULL PRIMARY KEY,
+    Username varchar(255) NOT NULL,
+    Password varchar(255) NOT NULL,
+    Email varchar(255),
+    RegistrationDate date
+);
+
+// ثبت نام کاربر جدید
+INSERT INTO Users (UserID, Username, Password, Email, RegistrationDate)
+VALUES (1, 'NewUser', '1234yones', 'user@example.com', CURDATE());
