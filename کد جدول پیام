@@ -1,0 +1,4 @@
+
+// درج پیام جدید توسط کاربر
+INSERT INTO Messages (ID, UserID, MessageText, MessageTime)
+VALUES (1, 123, 'محتوای پیام', CURRENT_TIMESTAMP);
